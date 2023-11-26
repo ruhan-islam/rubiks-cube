@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="screen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" styleClass="root" stylesheets="@backGround3.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.playController">
+   <center>
+      <SubScene fx:id="centerScene" height="200.0" styleClass="root" width="200.0" BorderPane.alignment="CENTER">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+   </center>
+   <left>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="u" layoutX="63.0" layoutY="14.0" mnemonicParsing="false" onAction="#u_pressed" text="u" />
+                  <Button fx:id="U" layoutX="62.0" layoutY="71.0" mnemonicParsing="false" onAction="#U_pressed" text="U" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="FI" layoutX="60.0" layoutY="14.0" mnemonicParsing="false" onAction="#FI_pressed" text="FI" />
+                  <Button fx:id="fi" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#fi_pressed" text="fi" />
+                  <Button fx:id="LI" layoutX="61.0" layoutY="77.0" mnemonicParsing="false" onAction="#LI_pressed" text="LI" />
+                  <Button fx:id="li" layoutX="15.0" layoutY="77.0" mnemonicParsing="false" onAction="#li_pressed" text="li" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="EI" layoutX="60.0" layoutY="65.0" mnemonicParsing="false" onAction="#EI_pressed" text="EI" />
+                  <Button fx:id="SI" layoutX="60.0" layoutY="108.0" mnemonicParsing="false" onAction="#SI_pressed" text="SI" />
+                  <Button fx:id="MI" layoutX="58.0" layoutY="14.0" mnemonicParsing="false" onAction="#MI_pressed" text="MI" />
+                  <Button layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#xi_pressed" text="xi" fx:id="xi" />
+                  <Button fx:id="yi" layoutX="12.0" layoutY="65.0" mnemonicParsing="false" onAction="#yi_pressed" text="yi" />
+                  <Button fx:id="zi" layoutX="10.0" layoutY="108.0" mnemonicParsing="false" onAction="#zi_pressed" text="zi" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="L" layoutX="65.0" layoutY="52.0" mnemonicParsing="false" onAction="#L_pressed" text="L" />
+                  <Button fx:id="l" layoutX="15.0" layoutY="52.0" mnemonicParsing="false" onAction="#l_pressed" text="l" />
+                  <Button fx:id="B" layoutX="64.0" layoutY="114.0" mnemonicParsing="false" onAction="#B_pressed" text="B" />
+                  <Button fx:id="b" layoutX="12.0" layoutY="114.0" mnemonicParsing="false" onAction="#b_pressed" text="b" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="DI" layoutX="58.0" layoutY="14.0" mnemonicParsing="false" onAction="#DI_pressed" text="DI" />
+                  <Button fx:id="di" layoutX="59.0" layoutY="64.0" mnemonicParsing="false" onAction="#di_pressed" text="di" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </left>
+   <right>
+      <GridPane fx:id="displayBox" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="R" layoutX="11.0" layoutY="77.0" mnemonicParsing="false" onAction="#R_pressed" text="R" />
+                        <Button fx:id="r" layoutX="66.0" layoutY="77.0" mnemonicParsing="false" onAction="#r_pressed" text="r" />
+                        <Button fx:id="F" layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#F_pressed" text="F" />
+                        <Button fx:id="f" layoutX="66.0" layoutY="14.0" mnemonicParsing="false" onAction="#f_pressed" text="f" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="UI" layoutX="13.0" layoutY="71.0" mnemonicParsing="false" onAction="#UI_pressed" text="UI" />
+                  <Button fx:id="ui" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#ui_pressed" text="ui" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="E" layoutX="11.0" layoutY="63.0" mnemonicParsing="false" onAction="#E_pressed" text="E" />
+                  <Button fx:id="S" layoutX="11.0" layoutY="115.0" mnemonicParsing="false" onAction="#S_pressed" text="S" />
+                  <Button fx:id="M" layoutX="9.0" layoutY="14.0" mnemonicParsing="false" onAction="#M_pressed" text="M" />
+                  <Button layoutX="64.0" layoutY="14.0" mnemonicParsing="false" onAction="#x_pressed" text="x" fx:id="x" />
+                  <Button fx:id="y" layoutX="64.0" layoutY="65.0" mnemonicParsing="false" onAction="#y_pressed" text="y" />
+                  <Button fx:id="z" layoutX="64.0" layoutY="115.0" mnemonicParsing="false" onAction="#z_pressed" text="z" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="RI" layoutX="14.0" layoutY="52.0" mnemonicParsing="false" onAction="#RI_pressed" text="RI" />
+                  <Button fx:id="ri" layoutX="62.0" layoutY="52.0" mnemonicParsing="false" onAction="#ri_pressed" text="ri" />
+                  <Button fx:id="BI" layoutX="14.0" layoutY="114.0" mnemonicParsing="false" onAction="#BI_pressed" text="BI" />
+                  <Button fx:id="bi" layoutX="61.0" layoutY="114.0" mnemonicParsing="false" onAction="#bi_pressed" text="bi" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="D" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#D_pressed" text="D" />
+                  <Button fx:id="d" layoutX="14.0" layoutY="64.0" mnemonicParsing="false" onAction="#d_pressed" text="d" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Label fx:id="p1name" layoutX="36.0" layoutY="119.0" text="Label" visible="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Label fx:id="p2name" layoutX="34.0" layoutY="118.0" text="Label" visible="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+               <children>
+                  <Label fx:id="p3name" layoutX="37.0" layoutY="119.0" text="Label" visible="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Label fx:id="p4name" layoutX="41.0" layoutY="117.0" text="Label" visible="false" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </right>
+   <top>
+      <AnchorPane prefHeight="64.0" prefWidth="1366.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="time" layoutX="384.0" layoutY="9.0" text="000">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="leftArrow" disable="true" layoutX="267.0" layoutY="32.0" mnemonicParsing="false" onAction="#leftArrowPressed" text="&lt;" />
+            <Button fx:id="rightArrow" layoutX="631.0" layoutY="32.0" mnemonicParsing="false" onAction="#rightArrowPressed" text="&gt;" />
+            <Button fx:id="downArrow" layoutX="695.0" layoutY="32.0" mnemonicParsing="false" onAction="#downArrowPressed" text="\\/" visible="false" />
+            <Button fx:id="upArrow" layoutX="194.0" layoutY="32.0" mnemonicParsing="false" onAction="#upArrowPressed" text="/\" visible="false" />
+            <Label fx:id="username" layoutX="1062.0" layoutY="5.0" text="Label" />
+            <Button fx:id="logoutButton" disable="true" layoutX="1064.0" layoutY="32.0" mnemonicParsing="false" onAction="#logoutButtonPressed" text="Logout" />
+            <Button fx:id="againButton" disable="true" layoutX="1139.0" layoutY="32.0" mnemonicParsing="false" onAction="#againButtonPressed" text="Play Again" />
+            <Label fx:id="finishedLabel" layoutX="694.0" layoutY="23.0" text="Label" visible="false" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
